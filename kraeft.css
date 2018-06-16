@@ -1,0 +1,50 @@
+body {
+	font-family: 'Titan One';
+	color: black;
+	font-size: 16px;
+	white-space: nowrap;
+	background-color: white;
+}
+.white  {
+	color: white;
+	text-shadow:  2px  2px #000,
+				  2px -2px #000,
+				 -2px  2px #000,
+				 -2px -2px #000,
+				  2px    0 #000,
+				 -2px    0 #000,
+					0  2px #000,
+					0 -2px #000;
+}
+div.picture {
+	border: 1px solid #ddd;
+	width: 602px;
+	height: 302px;
+	float: left;
+	display: grid;
+	grid-template-columns: fit-content(50%) 1fr;
+	box-sizing: border-box;
+}
+.border {
+	margin: 15px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+div.zutaten div {
+	background-color: white;
+}
+div.sorte {
+	color: white;
+	text-shadow:  4px  4px #000,
+				  4px -4px #000,
+				 -4px  4px #000,
+				 -4px -4px #000,
+				  4px    0 #000,
+				 -4px    0 #000,
+					0  4px #000,
+					0 -4px #000;
+}
+div.sorte div {
+	width: 100%;
+}

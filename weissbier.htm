@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet"/>
+		<link href="./kraeft.css" rel="stylesheet"/>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="./kraeft.js"></script>
+		<script>
+			function change(picture) {
+				$(picture).find(".zutaten").find("span:eq(3)").css("font-size", "26px").html("Saphir + Mango");
+			}
+		</script>
+	</head>
+	<body onload="copy(6, 6, change);">
+		<div id="picture" class="picture">
+			<div class="zutaten border" style="background-color: #27408b;">
+				<div>
+					<span style="font-size:34px" class="white">Kräft Bräu</span><br>
+					<span style="font-size:44px">seit 2018</span><br>
+					<span style="font-size:16px">Weizen, Pilsener, Wiener</span><br>
+					<span style="font-size:27px">Saphir Hopfen</span><br>
+					<span style="font-size:27px">Gozdawa BW11</span><br>
+					<span style="font-size:17px">gebraut am 25.05.2018</span><br>
+					<span style="font-size:20px">11,7% Stammwürze</span><br>
+					<span style="font-size:25px">17 IBU | 5,0 % Vol</span><br>
+				</div>
+			</div>
+			<div class="sorte border">
+				<div>
+					<span style="font-size:110px">Weiß</span><br>
+					<span style="font-size:129px">bier</span><br>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
