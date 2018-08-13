@@ -4,16 +4,19 @@
 		<meta charset="UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet"/>
 		<link href="./kraeft.css" rel="stylesheet"/>
-		<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
 		<script src="./jquery-1.11.0.min.js"></script>
 		<script src="./kraeft.js"></script>
 		<script>
 			function change(picture) {
 				$(picture).find(".zutaten").find("span:eq(4)").css("font-size", "29px").html("Simcoe, Citra"); // Aroma statt Hopfenstopfen
+				
+				$(picture).find(".sorte").find("span:eq(0)").css("font-size", "60px");
+				$(picture).find(".sorte").find("div").find("span:eq(1)").css("font-size", "70px").html("Pale");
+				$(picture).find(".sorte").find("div").find("span:eq(1)").append("<br/>").append($("<span/>").css("font-size", "98px").html("Ale"));
 			}
 		</script>
 	</head>
-	<body onload="copy(1, 1, change);">
+	<body onload="copy(6, 6, change);">
 		<div id="picture" class="picture">
 			<div class="zutaten border" style="background-color: #ffd700;">
 				<div>
