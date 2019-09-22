@@ -1,4 +1,4 @@
-function copy(m, n, callback) {
+function copy(callback, m, n) {
 	var original = $("#picture");
 
 	for(var i = 1; i < m; i++) {

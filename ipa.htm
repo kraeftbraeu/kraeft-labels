@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 	<head>
 		<meta charset="UTF-8">
-		<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet"/>
-		<link href="./kraeft.css" rel="stylesheet"/>
-		<script src="./jquery-1.11.0.min.js"></script>
-		<script src="./kraeft.js"></script>
+		<link  href="plus/kraeft.css" rel="stylesheet"/>
+		<script src="plus/jquery-1.11.0.min.js"></script>
+		<script src="plus/kraeft.js"></script>
 		<script>
 			function change(picture) {
 				$(picture).find(".zutaten").find("span:eq(4)").css("font-size", "29px").html("Simcoe, Citra"); // Aroma statt Hopfenstopfen
@@ -16,7 +15,7 @@
 			}
 		</script>
 	</head>
-	<body onload="copy(6, 6, change);">
+	<body onload="copy(change, 6, 6);">
 		<div id="picture" class="picture">
 			<div class="zutaten border" style="background-color: #ffd700;">
 				<div>
