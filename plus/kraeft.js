@@ -14,3 +14,16 @@ function copy(callback, m, n) {
 		original.parent().append(clone);
 	}
 }
+
+function stackZutaten() {
+	const spans = $(".zutaten span");
+	const newWidth = 210;
+	spans.each(index => {
+		var span = $(spans[index]);
+		var oldFontSize = span.css('font-size');
+		oldFontSize = oldFontSize.substr(0, oldFontSize.length - 2);
+		var oldWidth = span.width();
+		var newFontSize = oldFontSize * newWidth / oldWidth;
+		span.css('font-size', newFontSize + "px");
+	});
+}
